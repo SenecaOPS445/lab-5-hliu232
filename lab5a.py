@@ -6,6 +6,7 @@ def read_file_string(file_name):
     filename = open(file_name,'r')
     f_str = filename.read()
     filename.close()
+
     return f_str
 
 def read_file_list(file_name):
@@ -16,7 +17,7 @@ def read_file_list(file_name):
     f_list = f_str.split('\n')
     if f_list[-1] == '':
         f_list = f_list[:-1]
-        
+
     filename.close()
     return f_list
 
