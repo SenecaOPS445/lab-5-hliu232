@@ -14,7 +14,8 @@ def read_file_list(file_name):
     filename = open(file_name,'r')
     f_str = filename.read()
     f_list = f_str.split('\n')
-    if f_list[-1] == '':
+
+    if f_list[-1] == '':  # Remove the last empty item of list
         f_list = f_list[:-1]
         
     filename.close()
